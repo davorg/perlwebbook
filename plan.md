@@ -3,46 +3,46 @@ Plan
 
 * Introduction
 
-** History of web development
+	* History of web development
 
 * How the web works
 
-** HTTP
+	* HTTP
 
-** HTML / CSS / Javascript
+	* HTML / CSS / Javascript
 
-** Web servers
+	* Web servers
 
 * Underlying tools
 
-** Perl
+	* Perl
 
-** Moose
+	* Moose
 
-** Template Toolkit
+	* Template Toolkit
 
-** DBIx::Class
+	* DBIx::Class
 
-** PSGI / Plack
+	* PSGI / Plack
 
 * Frameworks
 
-** Raw Plack
+	* Raw Plack
 
-** Web::Simple
+	* Web::Simple
 
-** Mojolicious
+	* Mojolicious
 
-** Dancer
+	* Dancer
 
-** Catalyst
+	* Catalyst
 
 * Deployment
 
 * Code archeology
 
-** How CGI works
+	* How CGI works
 
-** Why CGI is outdated
+	* Why CGI is outdated
 
-** How to rescue a CGI program
+	* How to rescue a CGI program
