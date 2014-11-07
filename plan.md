@@ -1,6 +1,3 @@
-Plan
-====
-
 * Introduction
 
 	* History of web development
