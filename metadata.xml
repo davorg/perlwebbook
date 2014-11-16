@@ -1,0 +1,9 @@
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+<dc:title id="main">Perl Web Book</dc:title> 
+<meta refines="#main" property="title-type">main</meta>
+<dc:language>en-GB</dc:language> 
+<dc:creator opf:file-as="Cross, Dave" opf:role="aut">Dave Cross</dc:creator> 
+<dc:publisher>Perl School Publishing</dc:publisher>
+<dc:date opf:event="publication">2014-11-16</dc:date>
+<dc:rights>Copyright ©2014 by Dave Cross</dc:rights>
+</metadata>
