@@ -3,6 +3,8 @@
 TODO: Put some sort of quote in about documents which are linked
 together.
 
+## HTTP
+
 Under the hood, the web is all about the HyperText
 Transfer Protocol. HTTP is the means by which a client (such as
 a web browser, or a search engine bot) can ask a server for 
@@ -10,7 +12,7 @@ something and get a response which either includes whatever was
 requested or a message that says something was wrong with the
 request.
 
-## Anatomy of a request
+### Anatomy of a request
 
 Let's take a look at an HTTP request.
 
@@ -18,7 +20,7 @@ Let's take a look at an HTTP request.
     Host: example.com␤␍
     ␤␍
 
-### The Request-Line
+#### The Request-Line
 
 The first line is the *Request-Line*. This has three parts.
 
@@ -35,7 +37,7 @@ The line then ends with a carriage return **and** a line feed
 
 After the request line we have the HTTP request headers.
 
-### HTTP Headers
+#### HTTP Headers
 
 Both requests and responses come in two parts. A set of headers and then, sometimes, some content.
 
@@ -49,7 +51,7 @@ There are lots of different headers in HTTP, and more from
 extensions, and we'll cover the more important ones throughout the 
 book.
 
-#### The Host header
+##### The Host header
 
 If this was HTTP 1.0 then we wouldn't need to send any headers, but IPv4 addresses are a
 precious commodity and we often have multiple websites hosted on a 
@@ -66,8 +68,11 @@ properly. Can the host header be omitted if an absolute URI is in
 the header? Rephrase the bits about the Host header if that is an
 option.
 
-### Ending the header
+#### Ending the header
 
 Finally, the request header is ended by two `CRLF` in a row. 
 
+## HTML, CSS & Javascript
+
+## Web Servers
 
