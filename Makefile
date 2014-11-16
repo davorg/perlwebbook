@@ -1,10 +1,16 @@
 
+chapters = $(shell cat chapters.txt)
+
 book: perlwebbook.epub
 
 mobi: perlwebbook.mobi
 
 perlwebbook.mobi: perlwebbook.epub
-	kindlegen perlwebbook.epub
+	kindlegen -verbose perlwebbook.epub
 
-perlwebbook.epub: chapters/how_the_web_works.md
-	pandoc -o perlwebbook.epub title.txt chapters/how_the_web_works.md --epub-metadata=metadata.xml --toc --toc-depth=2
+perlwebbook.epub: $(chapters)
+	pandoc -o perlwebbook.epub title.txt $(chapters) --epub-metadata=metadata.xml --toc --toc-depth=2
+
+clean:
+	rm perlwebbook.epub perlwebbook.mobi
+
