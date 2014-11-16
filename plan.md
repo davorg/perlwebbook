@@ -43,3 +43,11 @@
 	* Why CGI is outdated
 
 	* How to rescue a CGI program
+
+------
+
+Content to think about squeezing in:
+
+* Caching
+* Content-Disposition
+* REST
