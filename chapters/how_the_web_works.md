@@ -3,6 +3,27 @@
 TODO: Put some sort of quote in about documents which are linked
 together.
 
+The world wide web works on a "client-server" architecture. The client is usually
+a browser (but there are plenty of other types of web client). The server is some
+specialised software running somewhere on a machine that you have access to (either
+through your local network or the internet).
+
+Your web client sends a request to the server using a protocol called HTTP (the
+HyperText Transfer Protocol). The web server processes that request and returns
+an appropriate response. Your web client processes that response and takes the
+appropriate action. In many cases, the response will consist of a web page. In these
+cases, your web clinet (probably a browser) will parse the response and display
+the web page to you.
+
+Web pages are created using three technologies.
+
+* HTML is the mark-up language that describes the content of your page.
+* CSS sits on top of HTML and describes how your content should be displayed.
+* Javascript is a programming language that adds interactice functionality to your 
+web page.
+
+We will look at all of these technologies in more detail below.
+
 ## HTTP
 
 Under the hood, the web is all about the HyperText
