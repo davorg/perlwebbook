@@ -1,0 +1,16 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+use 5.010;
+use DateTime;
+use Person;
+
+my $dob = DateTime->new(year => 1962, month => 9, day => 7);
+
+my $dave = Person->new(
+    name   => 'Dave',
+    dob    => $dob,
+    gender => 'M'
+);
+
+say $dave->dob->day_name;

@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+use 5.010;
+use Person;
+
+my $dave = Person->new(
+    name   => 'Dave',
+    dob    => '1962-09-07',
+    gender => 'M'
+);
+
+say $dave->dob->day_name;

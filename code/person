@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+use 5.010;
+use DateTime;
+use Person;
+
+my $newborn = Person->new(
+    name   => 'Miles',
+    dob    => DateTime->now,
+    gender => 'M'
+);
+
+say $newborn->name; # displays 'Miles'
+say $newborn->dob;  # displays current date
+$newborn->name('Max'); # Parents change their minds
+say $newborn->name; # displays 'Max'
+say $newborn->dob->day_name;
