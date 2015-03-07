@@ -7,5 +7,6 @@ chapters/frameworks/websimple.md
 chapters/frameworks/dancer.md
 chapters/frameworks/mojolicious.md
 chapters/frameworks/catalyst.md
+chapters/frameworks/others.md
 chapters/deployment.md
 chapters/archeology.md
