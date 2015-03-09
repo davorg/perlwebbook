@@ -102,7 +102,7 @@ change any attributes that are marked as read-write.
 ### Generated methods
 
 You'll see from the previous example that Moose has generated some
-methods for use. Firstly we get a `new()` method that constructs a new
+methods for us. Firstly we get a `new()` method that constructs a new
 instance of the class (an object). Moose's `new()` method checks that
 all mandatory attributes have been given (using the `required`
 property) and also checks that the attributes are all of the correct
