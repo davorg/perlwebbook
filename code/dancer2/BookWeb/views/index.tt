@@ -1,0 +1,42 @@
+<%- MACRO showbook(book) BLOCK %>
+<div class="book"><p><img src="<% book.image_url %>" />
+<a href="http://amazon.co.uk/dp/<% book.isbn %>"><% book.title %></a>
+<br />By <% book.author.name %></p>
+<p><% IF book.started %>Began reading: <% book.started.strftime('%d %b %Y') %>.<% END %>
+<% IF book.ended %>Finished reading: <% book.ended.strftime('%d %b %Y') %>.<% END %></p>
+<%   IF book.started AND NOT book.ended -%>
+<p><a href="/end/<% book.isbn %>">Finish book</a></p>
+<%   ELSIF NOT book.started -%>
+<p><a href="/start/<% book.isbn %>">Start book</a></p>
+<%   END %>
+</div>
+<% END -%>
+
+<h1>Here's your reading list</h1>
+
+<h2>Reading</h2>
+<% IF reading.size %>
+<% FOREACH book IN reading %>
+<% showbook(book) %>
+<% END %>
+<% ELSE %>
+<p>No books found.</p>
+<% END %>
+ 
+<h2>Read</h2>
+<% IF read.size %>
+<% FOREACH book IN read %>
+<% showbook(book) %>
+<% END %>
+<% ELSE %>
+<p>No books found.</p>
+<% END %>
+ 
+<h2>To Read</h2>
+<% IF to_read.size %>
+<% FOREACH book IN to_read %>
+<% showbook(book) %>
+<% END %>
+<% ELSE %>
+<p>No books found.</p>
+<% END %>

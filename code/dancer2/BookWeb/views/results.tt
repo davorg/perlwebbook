@@ -1,0 +1,15 @@
+<h1>Search Results</h1>
+<% IF error -%>
+<p class="error"><% error %>
+<% ELSE %>
+<p>You searched for: <b><% search %></b></p>
+<%   IF books.size %>
+<ul>
+<%     FOREACH book IN books -%>
+<li><b><% book.title %></b> (<% book.authors.list.0 %>) <a href="/add/<% book.isbn %>">Add to list</a></li>
+<%     END %>
+</ul>
+<%   ELSE %>
+<p>Your search returned no results.</p>
+<%   END %>
+<% END %>

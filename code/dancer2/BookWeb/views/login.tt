@@ -1,0 +1,9 @@
+<h1>Login</h1>
+</div>
+<p>You need to be logged in to do that</p>
+<form method="POST" action="/login">
+<p>User: <input name="user" /><br />
+Password: <input type="password" name="pass" /><br />
+<input type="submit" value="Log in" />
+<input type="hidden" name="path" value="<% path %>" />
+</form>
