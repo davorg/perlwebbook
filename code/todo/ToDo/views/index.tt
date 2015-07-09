@@ -1,0 +1,68 @@
+
+<!--
+    Credit goes to the Ruby on Rails team for this page
+    has been heavily based on the default Rails page that is
+    built with a scaffolded application.
+
+    Thanks a lot to them for their work.
+
+    See Ruby on Rails if you want a kickass framework in Ruby:
+    http://www.rubyonrails.org/
+-->
+
+<div id="page">
+      <div id="sidebar">
+        <ul id="sidebar-items">
+          <li>
+            <h3>Join the community</h3>
+            <ul class="links">
+
+              <li><a href="http://perldancer.org/">PerlDancer</a></li>
+              <li><a href="http://twitter.com/PerlDancer/">Official Twitter</a></li>
+              <li><a href="https://github.com/PerlDancer/Dancer2/">GitHub Community</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>Browse the documentation</h3>
+
+            <ul class="links">
+              <li><a
+              href="https://metacpan.org/pod/Dancer2::Manual">Introduction</a></li>
+              <li><a href="https://metacpan.org/pod/Dancer2::Cookbook">Cookbook</a></li>
+              <li><a
+              href="https://metacpan.org/pod/Dancer2::Tutorial"
+              title="a tutorial to build a small blog engine with Dancer">Tutorial</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>Your application's environment</h3>
+
+            <ul>
+                <li>Location: <code>/home/dave/git/perlwebbook/code/todo/ToDo</code></li>
+                <li>Template engine: <code><% settings.template %></code></li>
+                <li>Logger: <code><% settings.logger %></code></li>
+                <li>Environment: <code><% settings.environment %></code></li>
+            </ul>
+
+          </li>
+        </ul>
+
+      </div>
+
+      <div id="content">
+        <div id="header">
+          <h1>Things To Do</h1>
+        </div>
+
+        <div id="getting-started">
+          <ul>
+<% FOREACH item IN items -%>
+            <li><b><% item.title %></b> (Priority: <% item.priority %>)<br>
+              <% item.description %></li>
+<% END -%>
+          </ul>
+        </div>
+      </div>
+    </div>

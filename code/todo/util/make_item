@@ -1,0 +1,22 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use 5.010;
+
+use FindBin qw($Bin);
+use lib "$Bin/../lib";
+
+use Todo::Schema;
+
+my $schema = Todo::Schema->connect(
+  'dbi:mysql:database=todo', 'todo', 'sekrit',
+) or die;
+
+my $item_rs = $schema->resultset('TodoItem');
+
+$item_rs->create({
+  title => 'Test Item',
+  description => 'Do this first',
+  priority => 1,
+});
