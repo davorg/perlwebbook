@@ -1,0 +1,4 @@
+# for OS X install and viewing ebook
+#Once youve downloaded the repo and used Terminal.app to cd to the directory make sure you have
+#pandoc installed http://pandoc.org/ there is a .pkg installer available https://github.com/jgm/pandoc/releases/tag/1.15.0.6
+# once pandoc is installed then simply type "make" in your Terminal and the epub file will be created and you can open the file in iBooks.app 
