@@ -304,5 +304,49 @@ gives us the number of years that the duration covers.
 
 ## DBIx::Class
 
+If you're writing an application of any reasonable level of size of
+complexity then you will almost certainly have a requirement to store
+some persistent data. And the most common way to store persistent data
+is to put it into a database. It's pretty likely, therefore, that your
+application will need to interact with a database in some way. Perl
+has standard tools that make this as simple as possible.
+
+The standard way to communicate with a database using Perl is through
+the Database Interface (DBI) module. This module gives you a
+standardised interface for talking to a database. This means that
+talking to an Oracle database is done using exactly the same interface
+that you use when talking a MySQL database (or any of the many other
+database engines that DBI supports. In order to be supported in DBI, a
+database engine requires the existence of a Database Driver (DBD)
+module. These driver modules already exist for a large number of
+database engines. For example, the database driver for MySQL is called
+DBD::mysql and the one for Oracle is called DBD::Sybase.
+
+Using DBI and the correct DBD, allows you to connect to a database and
+run SQL queries to insert, update, select and delete data. But the
+programmer needs to write raw SQL to carry out these operations. We
+can do better than that.
+
+We can do better than that using a tool called an Object Relational
+Mapper (ORM). An ORM takes data from a database and converts it into
+classes and objects that are usually easier to work with than the
+arrays and hashes you get from DBI. This conversion relies on some
+obvious parallels between the relational database model and the world
+of object oriented programming.
+
+* Classes, like tables, describe a type of data that is stored in your
+system.
+* Objects, like rows, each contain the details of a single instance of a
+class.
+* Attributes, like columns, each contain a single piece of information
+about a single instance of a class.
+
+We can therefore take a row from a table and convert it into a object
+of a class. This is how ORMs work. They convert (or "map") between the
+data in your database and the objects in your program.
+
+Currently, the most popular Perl ORM is called DBIx::Class and that is
+what we will use in the following examples.
+
 ## PSGI/Plack
 
