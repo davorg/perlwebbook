@@ -90,3 +90,8 @@ This section summarises the software needed to convert the input files into vari
 * An EPUB is created from the Markdown using Pandoc
 * A MOBI is created from the EPUB using Kindlegen
 * A PDF is created from the EPUB using Calibre
+
+Putting it all together, it looks like this (ebook_convert is the command
+line program that we use from the Calibre package):
+
+![Conversion Process](https://raw.githubusercontent.com/davorg/perlwebbook/master/converters.png)
