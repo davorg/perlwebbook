@@ -3,7 +3,7 @@
 In this repostitory, you will find the chapters written in 
 [Markdown](https://daringfireball.net/projects/markdown/). Markdown files are
 pretty readable, but you may well want to convert the source files into other
-formats. There is a Makefile that you can use you do thay, but you will need
+formats. There is a Makefile that you can use to do that, but you will need
 various other tools installed. This file explains which tools are required,
 what they are required for and how o get them.
 
