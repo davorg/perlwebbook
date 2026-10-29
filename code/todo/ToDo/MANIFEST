@@ -12,7 +12,6 @@ public/images/perldancer-bg.jpg
 public/images/perldancer.jpg
 public/css/style.css
 public/css/error.css
-public/javascripts/jquery.js
 t/001_base.t
 t/002_index_route.t
 lib/ToDo.pm
